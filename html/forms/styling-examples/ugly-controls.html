@@ -47,7 +47,7 @@
       input[type="datetime-local"], 
       input[type="color"], 
       select {
-        box-shadow: inset 1px 1px 3px ccc;
+        box-shadow: inset 1px 1px 3px #ccc;
         border-radius: 5px;
       }
 
@@ -132,7 +132,6 @@
         let curFiles = fileInput.files;
 
         if(!(curFiles.length === 0))  {
-          console.log('test');
           for(let i = 0; i < curFiles.length; i++) {
             const listItem = document.createElement('li');
             listItem.textContent = 'File name: ' + curFiles[i].name + '; file size ' + returnFileSize(curFiles[i].size) + '.';
